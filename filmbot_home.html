@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<title>filmobot</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono">
+<link rel="stylesheet" href="https://css.gg/dark-mode.css">
+
+<style>
+body {font-family: "Roboto Mono", sans-serif}
+h1 {font-family: "Roboto Mono", sans-serif}
+body, html {height: 100%}
+
+.dark-mode {
+  background-color: #202124;
+  color: white;
+}
+.btn {
+  background-color: rgba(0,0,0,0);
+  color: #202124;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+</style>
+<body>
+<div class="w3-display-topleft w3-padding-large w3-tiny">
+ <button onclick="myFunction()" class="btn"><i class="gg-dark-mode"></i></button>
+</div>
+<div class="w3-display-middle">
+  <h1 class="w3-xxlarge w3-animate-opacity">ahoj, ja som filmbot</h1>
+  <p>pomôžem ti s výberom filmu</p>
+  <a href='first_question' class="w3-large w3-center">začnime➡</a>
+</div>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
